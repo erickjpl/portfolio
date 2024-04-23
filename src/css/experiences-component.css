@@ -3,101 +3,81 @@
   background-image: linear-gradient(var(--bg-secondary), var(--bg-primary));
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
-.experiences .title {
+.experiences .container .title {
   text-align: center;
 }
 
-.experiences .paragraph {
+.experiences .container .paragraph {
   text-align: center;
   font-style: italic;
   margin-top: 2rem;
   font-size: 0.75rem;
 }
 
-.experiences .h-separator {
+.experiences .container .h-separator {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.experiences .time-worked {
+.experiences .container .time-worked {
   color: var(--text-secondary);
 }
 
-.experiences .working-information .job-company {
+.experiences .container .working-information .job-company {
   color: var(--text-important);
   font-size: 1.125rem;
 }
 
-.experiences .working-information .job-description {
+.experiences .container .working-information .job-description {
   color: var(--text-secondary);
   text-align: justify;
   margin-bottom: 0;
 }
 
-.experiences .working-information .read-more {
+.experiences .container .working-information .read-more {
   color: var(--text-primary);
   text-align: end;
 }
 
-.experiences .working-information .job-address {
+.experiences .container .working-information .job-address {
   margin-top: 1.25rem;
 }
 
-.experiences .btn-primary {
+.experiences .container .btn-primary {
   margin-top: 2.5rem;
 }
 
 @media (min-width: 768px) {
-  .experiences {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .experiences .paragraph {
+  .experiences .container .paragraph {
     max-width: 75%;
     margin: auto;
     margin-top: 2.5rem;
   }
 
-  .experiences .timeline {
+  .experiences .container .timeline {
     display: grid;
     grid-template-columns: 15rem 1fr;
     grid-gap: 0.5rem;
   }
 
-  .experiences .timeline .h-separator {
+  .experiences .container .timeline .h-separator {
     grid-column: 1 / span 2;
     margin-top: 2.5rem;
     margin-bottom: 2rem;
     border-width: 0.125rem;
   }
 
-  .experiences .timeline .time-worked {
+  .experiences .container .timeline .time-worked {
     grid-column: 1;
   }
 
-  .experiences .timeline .working-information {
+  .experiences .container .timeline .working-information {
     grid-column: 2;
   }
 
-  .experiences .timeline .working-information .job-company {
+  .experiences .container .timeline .working-information .job-company {
     margin-top: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .experiences .timeline {
-    max-width: 80%;
-    margin: auto;
-  }
-
-  .experiences .btn-primary {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

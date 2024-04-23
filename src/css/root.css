@@ -87,6 +87,11 @@ a:focus {
   display: block;  
 }
 
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 @media (min-width: 576px) and (max-width: 768px) {
   h2 {
     font-size: 3rem;
@@ -102,5 +107,20 @@ a:focus {
   }
   h2.title {
     font-size: 3rem;
+  }
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 60%;
   }
 }

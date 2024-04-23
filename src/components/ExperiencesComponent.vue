@@ -1,18 +1,20 @@
 <template>
   <section class="experiences">
-    <h2 class="title">Experiences</h2>
+    <div class="container">
+      <h2 class="title">Experiences</h2>
 
-    <p class="paragraph">
-      A journey marked by passion, dedication, and teamwork,
-      which have served as the fundamental pillars for overcoming challenging goals with determination and focus.
-    </p>
+      <p class="paragraph">
+        A journey marked by passion, dedication, and teamwork,
+        which have served as the fundamental pillars for overcoming challenging goals with determination and focus.
+      </p>
 
-    <working-information v-for="(experience, index) in experiences" :key="index" v-bind="experience" />
+      <working-information v-for="(experience, index) in experiences" :key="index" v-bind="experience" />
 
-    <a href="#" class="btn-primary">
-      Contact me
-      <span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/959159-5d3ea7b7.png" alt=""></span>
-    </a>
+      <a href="#" class="btn-primary">
+        Contact me
+        <span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/959159-5d3ea7b7.png" alt=""></span>
+      </a>
+    </div>
   </section>
 </template>
 
