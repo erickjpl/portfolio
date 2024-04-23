@@ -1,0 +1,172 @@
+.presentation {
+  color: var(--text-primary);
+  background-color: var(--bg-accent);
+}
+
+.presentation .info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: end;
+
+  padding-bottom: 1.25rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  height: calc(100vh - var(--height-header));
+}
+
+.presentation .info .h-separator {
+  max-width: 85%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+
+  opacity: 0.3;
+  border-bottom-width: 0;
+}
+
+.presentation .info .professional-job {
+  margin-bottom: 0;
+}
+
+.presentation .info .full-name {
+  margin-top: 0;
+}
+
+.presentation .info .biography {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  font-style: italic;
+  text-align: justify;
+}
+
+.presentation .info .personal-information {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 0.5rem;
+}
+
+.presentation .info .btn-primary {
+  width: 100%;
+  margin-top: 1.875rem;
+}
+
+.presentation .info .btn-primary .icon img {
+  height: 1.25rem;
+  vertical-align: middle;
+
+}
+
+.presentation .image {
+  background-image: url("../assets/111.jpg");
+  background-position: 25% 50%;
+  background-size: cover;
+  min-height: 380px;
+}
+
+@media (min-width: 376px) {
+  .presentation .info {
+    padding-bottom: 1.75rem;
+  }
+
+  .presentation .info .h-separator {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .presentation .info .biography {
+    margin-top: 2rem;
+  }
+
+  .presentation .info .personal-information {
+    grid-gap: 0.75rem;
+  }
+
+  .presentation .info .btn-primary {
+    margin-top: 2.25rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .presentation .info {
+    max-width: 75%;
+    padding-bottom: 3rem;
+  }
+
+  .presentation .info .h-separator {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .presentation .info .biography {
+    margin-top: 2.25rem;
+  }
+
+  .presentation .info .personal-information {
+    grid-gap: 1.125rem;
+  }
+
+  .presentation .info .btn-primary {
+    margin-top: 2.25rem;
+  }
+
+  .presentation .image {
+    min-height: 604px;
+  }
+}
+
+@media (min-width: 768px) {
+  .presentation .info {
+    max-width: 65%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .presentation .image {
+    min-height: 617px;
+  }
+}
+
+@media (min-width: 992px) {
+  .presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: calc(100vh - var(--height-header));
+  }
+
+  .presentation .info {
+    max-width: 100%;
+    padding-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    height: 100%;
+  }
+
+  .presentation .info .h-separator {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .presentation .info .biography {
+    margin-top: 1.5rem;
+  }
+
+  .presentation .info .personal-information {
+    grid-gap: 0.5rem;
+  }
+
+  .presentation .info .btn-primary {
+    margin-top: 1.5rem;
+  }
+
+  .presentation .image {
+    min-height: 596px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .presentation .info {
+    margin-left: 1.25rem;
+    padding-right: 40px;
+    padding-left: 2.5rem;
+  }
+}

@@ -1,0 +1,53 @@
+.experiences {
+  color: var(--text-primary);
+  background-image: linear-gradient(var(--bg-secondary), var(--bg-primary));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.experiences .title {
+  text-align: center;
+}
+
+.experiences .paragraph {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+.experiences .h-separator {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.experiences .time-worked {
+  color: var(--text-secondary);
+}
+
+.experiences .working-information .job-company {
+  color: var(--text-important);
+  font-size: 1.125rem;
+}
+
+.experiences .working-information .job-description {
+  color: var(--text-secondary);
+  text-align: justify;
+  position: relative;
+}
+
+.experiences .working-information .job-description .read-more {
+  color: var(--text-primary);
+  position: absolute;
+  right: 0;
+}
+
+.experiences .working-information .job-address {
+  margin-top: 1.25rem;
+}
+
+.experiences .btn-primary {
+  margin-top: 2.5rem;
+}

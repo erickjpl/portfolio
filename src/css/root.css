@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+h3,
+h5 {
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.875rem;
+}
+
+p {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-secondary);
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.h-separator {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-primary);
+}
+
+.font-weight-400 {
+  font-weight: 400
+}
+
+.font-weight-700 {
+  font-weight: 700
+}
+
+.btn-primary {
+  cursor: pointer;
+  background-color: var(--bg-important);
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: block;  
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 80px;
+  }
+}

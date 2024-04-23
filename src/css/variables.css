@@ -1,0 +1,11 @@
+:root {
+  --height-header: 80px;
+  --bg-primary: #2d2933;
+  --bg-secondary: #5e5a63;
+  --bg-accent: #3b383f;
+  --bg-important: #f7914d;
+  --text-primary: #ffffff;
+  --text-secondary: #c0bdc4;
+  --text-important: #f7914d;
+  --border-primary: #c0bdc4;
+}
