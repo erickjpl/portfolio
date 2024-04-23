@@ -1,0 +1,58 @@
+.my-skills {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 120%;
+  background-image: linear-gradient(0deg, rgba(45,41,51,0.6), rgba(94,90,99,0.6)), url('../assets/amjith-s-HJjKCArqJng-unsplash-2.jpg');
+}
+
+.my-skills .container {
+  color: var(--text-primary);
+  z-index: 1;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.my-skills .container .title {
+  text-align: center;
+}
+
+.my-skills .container .paragraph {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.my-skills .container .skill-list .skills .skill-name {
+  text-transform: uppercase;
+  list-style-type: circle; 
+}
+
+.my-skills .container .skill-list .skills .skill-details {
+  color: var(--text-secondary);
+  padding-left: 2rem;
+  list-style-type: circle; 
+}
+
+@media (min-width: 576px) {
+  .my-skills .container .skill-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .my-skills .container .skill-list .skills .skill-details {
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-skills {
+    background-size: auto 160%;
+  }
+  .my-skills .container .skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
