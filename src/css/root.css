@@ -98,6 +98,9 @@ a:focus {
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 80px;
+    font-size: 5rem;
+  }
+  h2.title {
+    font-size: 3rem;
   }
 }

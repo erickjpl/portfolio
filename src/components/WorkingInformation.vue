@@ -10,8 +10,8 @@
       <p class="job-description">
         <span class="preview" v-if="readMore">{{ description }}</span>
         <span class="description" v-if="!readMore">{{ jobDescription }}</span>
-        <span class="read-more" @click="toggle">{{ readMoreTitle }}</span>
       </p>
+      <p class="read-more" @click="toggle">{{ readMoreTitle }}</p>
 
       <p class="job-address">{{ jobAddress }}</p>
     </div>
