@@ -1,0 +1,57 @@
+.footer {
+  background-color: var(--bg-footer);
+  padding: 2.5rem 1.25rem;
+  color: var(--text-primary);
+}
+
+@media (min-width: 576px) {
+  .container-contact {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-contact {
+    max-width: 80%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-me .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 22rem 1fr;
+  }
+
+  .side-follow-us .title {
+    margin-top: 4rem;
+  }
+
+  .follow-message {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .contact-message {
+    display: none;
+  }
+
+  .container-contact {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-me .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

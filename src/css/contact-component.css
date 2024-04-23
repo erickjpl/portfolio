@@ -1,0 +1,119 @@
+.contact-me {
+  background-color: var(--bg-primary);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.message-contact {
+  text-align: justify;
+  color: var(--text-secondary);
+}
+
+.message-contact-center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.side-follow-us .title,
+.side-contact-me .title {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 2.5rem;
+}
+
+/* -------------------------------- Follow Us ------------------------------- */
+.follow-message {
+  display: none;
+}
+
+.container-social {
+  display: flex;
+  gap: 2.25rem;
+  justify-content: center;
+}
+
+.social-media-icon {
+  padding: 0.625rem;
+}
+
+.social-media-icon .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.social-media-icon .icon img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------- Contact Me ------------------------------- */
+.container-contact {
+  background-color: var(--bg-secondary);
+  margin: 1.5rem 1rem;
+  padding: 1rem;
+}
+
+.contact-message {
+  display: block;
+}
+
+/* --------------------------------- Inputs --------------------------------- */
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .container-contact {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-contact {
+    max-width: 80%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-me .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 22rem 1fr;
+  }
+
+  .side-follow-us .title {
+    margin-top: 4rem;
+  }
+
+  .follow-message {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .contact-message {
+    display: none;
+  }
+
+  .container-contact {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-me .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

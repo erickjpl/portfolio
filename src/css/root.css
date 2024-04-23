@@ -96,6 +96,30 @@ a:focus {
   margin: 0 auto;
 }
 
+.form {
+  position: relative;
+}
+
+.form .notify-error,
+.form .notify-success {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border: none;
+}
+.notify-error {
+  background: #F95D51;
+}
+.notify-success {
+  background: #6bd08f;
+}
+
+
 @media (min-width: 576px) and (max-width: 768px) {
   h2 {
     font-size: 3rem;
