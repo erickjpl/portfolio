@@ -4,54 +4,109 @@
   color: var(--text-primary);
 }
 
-@media (min-width: 576px) {
-  .container-contact {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.footer .content .logo {
+  width: 145px;
+  height: 40px;
 }
 
-@media (min-width: 768px) {
-  .container-contact {
-    max-width: 80%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+.footer .content .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .content .links {
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.footer .content .links .subtitle,
+.footer .content .social .subtitle {
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.250em;
+  text-transform: uppercase;
+}
+
+.footer .content .links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .content .links ul li {
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.footer .content .links ul li:hover {
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.footer .content .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer .info {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.footer .info .info-name {
+  color: var(--text-important);
+}
+
+@media (min-width: 576px) {
+  .footer .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer .content .logo {
+    grid-column: 1 / span 2;
+  }
+
+  .footer .content .social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer .content .social .subtitle {
+    grid-column: 1 / span 3;
   }
 }
 
 @media (min-width: 992px) {
-  .contact-me .container {
+  .footer .content {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 22rem 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 
-  .side-follow-us .title {
-    margin-top: 4rem;
+  .footer .content .logo {
+    grid-column: 1;
   }
 
-  .follow-message {
-    display: block;
-    margin-bottom: 48px;
+  .footer .content .links,
+  .footer .content .social {
+    margin-top: 0;
+    padding-top: 0;
   }
 
-  .contact-message {
-    display: none;
-  }
-
-  .container-contact {
-    max-width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .footer .content .social .subtitle {
+    margin-bottom: 1.5rem;
   }
 }
 
-@media (min-width: 1200px) {
-  .contact-me .container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+@media (min-width: 1200px) {}

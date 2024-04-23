@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <a>Logo</a>
+    <div class="logo">
+      <a href="#"><img src="../assets/logo-nombre-ligth.png" alt="Logo Erick"></a>
+    </div>
 
     <nav>
 
